@@ -8,8 +8,9 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        final hogesd = HogeImpl();
-        hogesd.hogee();
+        final error = HogeImpl();
+
+        error.hogee();
       },
       child: const Text('some'),
     );
