@@ -4,6 +4,7 @@ import 'package:custom_lint_builder/custom_lint_builder.dart';
 import 'package:lint_learning/assist/button_assist.dart';
 import 'package:lint_learning/assist/hoge_assist.dart';
 
+import 'lint/avoid_direct_call.dart';
 import 'lint/hoge_rule.dart';
 
 PluginBase createPlugin() => _HogeLinter();
@@ -14,6 +15,7 @@ class _HogeLinter extends PluginBase {
   List<LintRule> getLintRules(CustomLintConfigs configs) {
     return [
       const HogeRule(),
+      const AvoidDirectCallRule(),
     ];
   }
 
